@@ -1,0 +1,27 @@
+{
+  "description": "Schema for reporting web vitals metrics",
+  "self": {
+      "vendor": "com.oda",
+      "name": "web_vitals",
+      "format": "jsonschema",
+      "version": "1-0-0"
+  },
+  "title": "web_vitals",
+  "type": "object",
+  "properties": {
+      "name": {
+          "type": "string",
+          "description": "Name of the core web vital metric - cumulative layout shift, first contentful pain, first input delay, largest contentful paint and time to first byte",
+          "enum": ["CLS", "FCP", "FID", "LCP", "TTFB"]
+      },
+      "value": {
+          "type": "number",
+          "description": "Value of the metric, milliseconds for LCP and FID, a calculated score for CLS"
+      },
+      "delta": {
+          "type": "number",
+          "description": "Delta from the last recorded value"
+      }
+  },
+  "additionalProperties": false
+}

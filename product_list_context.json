@@ -1,0 +1,37 @@
+{
+  "description": "Schema for product list context that collects data on events taken place on product lists. Tracks list name of the list, position in the list where event happened and content in list when event happened.",
+  "self": {
+    "vendor": "com.oda",
+    "name": "product_list_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "list_name": {
+      "description": "Name of the product list",
+      "type": "string",
+      "maxLength": 128
+    },
+    "list_event_position": {
+      "description": "On what position in the list did the event happen",
+      "type": "integer",
+      "maximum": 128,
+      "minimum": 0
+    },
+    "list_items": {
+      "description": "Which product ids was in the list when the event happened",
+      "type": "array",
+      "items": {
+        "description": "Product id",
+        "type": "string",
+        "maxLength": 128
+      },
+      "maxItems": 128
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "list_name"
+  ]
+}
