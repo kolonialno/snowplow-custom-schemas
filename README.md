@@ -1,0 +1,1 @@
+# snowplow-custom-schemas
