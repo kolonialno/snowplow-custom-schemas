@@ -1,0 +1,33 @@
+{
+  "description": "Schema for storing current user context.",
+  "self": {
+    "vendor": "com.oda",
+    "name": "user_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "language": {
+      "description": "The current language active for the user.",
+      "type": "string",
+      "maxLength": 128
+    },
+    "region": {
+      "description": "The current region active for the user.",
+      "type": "string",
+      "maxLength": 128
+    },
+    "jurisdiction": {
+      "description": "The current jurisdiction active for the user.",
+      "type": "string",
+      "maxLength": 128
+    },
+    "browser_cookie_id": {
+      "description": "The value of the current browser_cookie_id.",
+      "type": "string",
+      "maxLength": 128
+    }
+  },
+  "additionalProperties": false
+}
