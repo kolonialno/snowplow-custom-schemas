@@ -4,7 +4,7 @@
     "vendor": "com.oda",
     "name": "user_context",
     "format": "jsonschema",
-    "version": "1-0-0"
+    "version": "1-0-1"
   },
   "type": "object",
   "properties": {
@@ -27,6 +27,36 @@
       "description": "The value of the current browser_cookie_id.",
       "type": "string",
       "maxLength": 128
+    },
+    "num_products_in_cart": {
+      "description": "Current number of products in cart.",
+      "type": "integer",
+      "maximum": 9999999999,
+      "minimum": 0
+    },
+    "products_in_cart": {
+      "description": "The product ids in the cart.",
+      "type": "array",
+      "items": {
+        "description": "Product id",
+        "type": "string",
+        "maxLength": 128
+      },
+      "maxItems": 9999999999
+    },
+    "gross_price_cart": {
+      "description": "The gross price of the cart.",
+      "type": "number"
+    },
+    "num_recipes_in_cart": {
+      "description": "Current number of recipes in the cart.",
+      "type": "integer",
+      "maximum": 9999999999,
+      "minimum": 0
+    },
+    "delivery_slot_selected": {
+      "description": "Have the user selected a delivery slot?",
+      "type": "boolean"
     }
   },
   "additionalProperties": false
