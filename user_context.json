@@ -35,7 +35,7 @@
       "minimum": 0
     },
     "products_in_cart": {
-      "description": "The product ids in the cart.",
+      "description": "The product id's in the cart.",
       "type": "array",
       "items": {
         "description": "Product id",
@@ -54,9 +54,19 @@
       "maximum": 9999999999,
       "minimum": 0
     },
-    "delivery_slot_selected": {
-      "description": "Have the user selected a delivery slot?",
-      "type": "boolean"
+    "recipes_in_cart": {
+      "description": "The recipe id's in the cart.",
+      "type": "array",
+      "items": {
+        "description": "Recipe id",
+        "type": "string",
+        "maxLength": 128
+      },
+      "maxItems": 9999999999
+    },
+    "delivery_slot_id": {
+      "description": "The delivery slot currently selected",
+      "type": "integer"
     }
   },
   "additionalProperties": false
