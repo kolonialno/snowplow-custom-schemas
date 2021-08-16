@@ -23,6 +23,11 @@
       "type": "string",
       "maxLength": 128
     },
+    "currency": {
+      "description": "The currency the user is browsing the site in.",
+      "type": "string",
+      "maxLength": 128
+    },
     "browser_cookie_id": {
       "description": "The value of the current browser_cookie_id.",
       "type": "string",
@@ -44,7 +49,7 @@
       },
       "maxItems": 9999999999
     },
-    "gross_price_cart": {
+    "net_price_cart": {
       "description": "The gross price of the cart.",
       "type": "number"
     },
