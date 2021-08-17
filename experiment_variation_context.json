@@ -1,0 +1,33 @@
+{
+  "description": "Schema for storing experiment and its variation on the current user context.",
+  "self": {
+    "vendor": "com.oda",
+    "name": "experiment_variation_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "experiment_key": {
+      "description": "The key of the current experiment assigned for the user.",
+      "type": "string",
+      "maxLength": 128
+    },
+    "experiment_name": {
+      "description": "The name of the current experiment assigned for the user.",
+      "type": "string",
+      "maxLength": 128
+    },
+    "variation_key": {
+      "description": "The key of the current experiment variation assigned for the user.",
+      "type": "string",
+      "maxLength": 128
+    },
+    "variation_name": {
+      "description": "The name of the current experiment variation assigned for the user.",
+      "type": "string",
+      "maxLength": 128
+    }
+  },
+  "additionalProperties": false
+}
