@@ -50,7 +50,11 @@
       "maxItems": 9999999999
     },
     "net_price_cart": {
-      "description": "The gross price of the cart.",
+      "description": "The total net price of the cart.",
+      "type": "number"
+    },
+    "net_profit_cart": {
+      "description": "The total net profit of the cart.",
       "type": "number"
     },
     "num_recipes_in_cart": {
