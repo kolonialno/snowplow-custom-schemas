@@ -39,16 +39,6 @@
       "maximum": 9999999999,
       "minimum": 0
     },
-    "products_in_cart": {
-      "description": "The product id's in the cart.",
-      "type": "array",
-      "items": {
-        "description": "Product id",
-        "type": "string",
-        "maxLength": 128
-      },
-      "maxItems": 9999999999
-    },
     "net_price_cart": {
       "description": "The total net price of the cart.",
       "type": "number"
@@ -62,16 +52,6 @@
       "type": "integer",
       "maximum": 9999999999,
       "minimum": 0
-    },
-    "recipes_in_cart": {
-      "description": "The recipe id's in the cart.",
-      "type": "array",
-      "items": {
-        "description": "Recipe id",
-        "type": "string",
-        "maxLength": 128
-      },
-      "maxItems": 9999999999
     },
     "delivery_slot_id": {
       "description": "The delivery slot currently selected",
