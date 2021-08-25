@@ -32,30 +32,6 @@
       "description": "The value of the current browser_cookie_id.",
       "type": "string",
       "maxLength": 128
-    },
-    "num_products_in_cart": {
-      "description": "Current number of products in cart.",
-      "type": "integer",
-      "maximum": 9999999999,
-      "minimum": 0
-    },
-    "net_price_cart": {
-      "description": "The total net price of the cart.",
-      "type": "number"
-    },
-    "net_profit_cart": {
-      "description": "The total net profit of the cart.",
-      "type": "number"
-    },
-    "num_recipes_in_cart": {
-      "description": "Current number of recipes in the cart.",
-      "type": "integer",
-      "maximum": 9999999999,
-      "minimum": 0
-    },
-    "delivery_slot_id": {
-      "description": "The delivery slot currently selected",
-      "type": "integer"
     }
   },
   "additionalProperties": false
