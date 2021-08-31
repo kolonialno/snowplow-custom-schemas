@@ -1,0 +1,21 @@
+{
+  "description": "Schema for location, i.e. page on web or tab in the app.",
+  "self": {
+    "vendor": "com.oda",
+    "name": "location_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "location_name": {
+      "description": "Name of the location",
+      "type": "string",
+      "maxLength": 128
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "location_name"
+  ]
+}
