@@ -4,7 +4,7 @@
     "vendor": "com.oda",
     "name": "user_context",
     "format": "jsonschema",
-    "version": "1-0-0"
+    "version": "1-0-1"
   },
   "type": "object",
   "properties": {
@@ -20,6 +20,11 @@
     },
     "jurisdiction": {
       "description": "The current jurisdiction active for the user.",
+      "type": "string",
+      "maxLength": 128
+    },
+    "currency": {
+      "description": "The currency the user is browsing the site in.",
       "type": "string",
       "maxLength": 128
     },
