@@ -32,6 +32,12 @@
       "maximum": 9999999999,
       "minimum": 0
     },
+    "num_categories": {
+      "description": "Number of categories in the order.",
+      "type": "integer",
+      "maximum": 9999999999,
+      "minimum": 0
+    },
     "num_recipes": {
       "description": "Number of recipes in the order.",
       "type": "integer",
