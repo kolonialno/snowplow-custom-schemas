@@ -21,6 +21,11 @@
       "description": "The total net price of the order.",
       "type": "number"
     },
+    "currency": {
+      "description": "The currency set on the order.",
+      "type": "string",
+      "maxLength": 128
+    },
     "num_products": {
       "description": "Number of products. Sample products, coupons, discounts, fees are excluded.",
       "type": "integer",
@@ -55,11 +60,6 @@
       "type": "integer",
       "maximum": 9999999999,
       "minimum": 0
-    },
-    "currency": {
-      "description": "The currency the user is browsing the site in.",
-      "type": "string",
-      "maxLength": 128
     }
   },
   "additionalProperties": false
