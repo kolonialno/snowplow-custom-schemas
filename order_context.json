@@ -17,6 +17,11 @@
       "description": "The delivery slot currently selected",
       "type": "integer"
     },
+    "delivery_date": {
+      "description": "The delivery date for the slot selected.",
+      "type": "string",
+      "maxLength": 12
+    },
     "net_price": {
       "description": "The total net price of the order.",
       "type": "number"
