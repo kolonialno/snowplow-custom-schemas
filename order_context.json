@@ -11,66 +11,7 @@
     "order_id": {
       "description": "The hashed order id.",
       "type": "string",
-      "maxLength": 128
-    },
-    "delivery_slot_id": {
-      "description": "The delivery slot currently selected",
-      "type": "integer"
-    },
-    "delivery_date": {
-      "description": "The delivery date for the slot selected.",
-      "type": "string",
-      "maxLength": 12
-    },
-    "net_price": {
-      "description": "The total net price of the order.",
-      "type": "number"
-    },
-    "currency": {
-      "description": "The currency set on the order.",
-      "type": "string",
-      "maxLength": 128
-    },
-    "num_products": {
-      "description": "Number of products. Sample products, coupons, discounts, fees are excluded.",
-      "type": "integer",
-      "maximum": 9999999999,
-      "minimum": 0
-    },
-    "num_categories": {
-      "description": "Number of categories in the order.",
-      "type": "integer",
-      "maximum": 9999999999,
-      "minimum": 0
-    },
-    "num_recipes": {
-      "description": "Number of recipes in the order.",
-      "type": "integer",
-      "maximum": 9999999999,
-      "minimum": 0
-    },
-    "num_coupons": {
-      "description": "Number of coupons applied to the order.",
-      "type": "integer",
-      "maximum": 9999999999,
-      "minimum": 0
-    },
-    "payment_method": {
-      "description": "Name of the payment method last used on the order.",
-      "type": "string",
-      "maxLength": 128
-    },
-    "num_order_changes": {
-      "description": "Number of changes made on the order.",
-      "type": "integer",
-      "maximum": 9999999999,
-      "minimum": 0
-    },
-    "num_orders": {
-      "description": "Number of orders the user have.",
-      "type": "integer",
-      "maximum": 9999999999,
-      "minimum": 0
+      "maxLength": 256
     }
   },
   "additionalProperties": false
