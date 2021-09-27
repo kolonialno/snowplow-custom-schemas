@@ -8,8 +8,8 @@
   },
   "type": "object",
   "properties": {
-    "order_id": {
-      "description": "The hashed order id.",
+    "order_number": {
+      "description": "The order number.",
       "type": "string",
       "maxLength": 256
     }
