@@ -1,0 +1,18 @@
+{
+  "description": "Schema for order context.",
+  "self": {
+    "vendor": "com.oda",
+    "name": "order_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "order_number": {
+      "description": "The order number.",
+      "type": "string",
+      "maxLength": 256
+    }
+  },
+  "additionalProperties": false
+}
