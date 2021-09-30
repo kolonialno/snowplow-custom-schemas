@@ -1,0 +1,59 @@
+{
+  "description": "Describing a search and corresponding search result",
+  "self": {
+    "vendor": "com.oda",
+    "name": "search_result_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "query": {
+      "description": "The search query string",
+      "type": "string",
+      "maxLength": 256
+    },
+    "type": {
+      "description": "What type of entities was searched for",
+      "type": "string",
+      "maxLength": 256
+    },
+    "page": {
+      "description": "For paginated searches, which page was requested",
+      "type": "integer",
+      "maxLength": 256,
+      "minimum": 1
+    },
+    "result_count": {
+      "description": "How many results were returned",
+      "type": "integer",
+      "minimum": 0
+    },
+    "result_items": {
+      "description": "The ids of the items in the result",
+      "type": "array",
+      "items": {
+        "description": "Entity/Model ID",
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "has_filters": {
+      "description": "Was there any filters applied",
+      "type": "boolean"
+    },
+    "filters": {
+      "description": "The active filters for the search",
+      "type": "array",
+      "items": {
+        "description": "List of filter type:value pairs used in the query",
+        "type": "string"
+      }
+    }
+
+  },
+  "additionalProperties": false,
+  "required": [
+    "query", "type"
+  ]
+}
