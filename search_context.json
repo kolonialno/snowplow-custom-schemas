@@ -2,7 +2,7 @@
   "description": "Describing a search and corresponding search result",
   "self": {
     "vendor": "com.oda",
-    "name": "search_result_context",
+    "name": "search_context",
     "format": "jsonschema",
     "version": "1-0-0"
   },
