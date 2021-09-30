@@ -13,8 +13,8 @@
       "type": "string",
       "maxLength": 256
     },
-    "type": {
-      "description": "What type of entities was searched for",
+    "search_type": {
+      "description": "What kind of search that was made",
       "type": "string",
       "maxLength": 256
     },
