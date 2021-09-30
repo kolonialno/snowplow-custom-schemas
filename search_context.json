@@ -33,8 +33,7 @@
       "description": "The ids of the items in the result",
       "type": "array",
       "items": {
-        "description": "Entity/Model ID",
-        "type": "string"
+        "type": "integer"
       }
     },
     "has_filters": {
