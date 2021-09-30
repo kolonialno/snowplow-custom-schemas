@@ -34,8 +34,7 @@
       "type": "array",
       "items": {
         "description": "Entity/Model ID",
-        "type": "integer",
-        "minimum": 0
+        "type": "string"
       }
     },
     "has_filters": {
