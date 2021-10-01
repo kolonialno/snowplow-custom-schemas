@@ -38,11 +38,6 @@
         "minimum": 0
       }
     },
-    "result_items_string": {
-      "description": "Workaround: ids of items in the result as a string array",
-      "type": "string",
-      "maxLength": 5000
-    },
     "has_filters": {
       "description": "Was there any filters applied",
       "type": "boolean"
@@ -62,3 +57,4 @@
     "type"
   ]
 }
+
