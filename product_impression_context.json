@@ -18,14 +18,6 @@
       "maximum": 100,
       "minimum": 1
     },
-    "request_type": {
-      "type": "string",
-      "description": "Describes if the products are returned for a WEB or API request",
-      "enum": [
-        "API",
-        "WEB"
-      ]
-    },
     "products": {
       "description": "The product IDs for the returned products",
       "type": "array",
