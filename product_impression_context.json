@@ -8,8 +8,8 @@
   },
   "type": "object",
   "properties": {
-    "request_url": {
-      "description": "The url of the request asking for products",
+    "location": {
+      "description": "Describes what kind of page location or context the product was returned for",
       "type": "string",
       "maxLength": 256
     },
@@ -17,11 +17,6 @@
       "description": "If pagination, this will describe the page",
       "maximum": 100,
       "minimum": 1
-    },
-    "location": {
-      "description": "Describes what kind of page location or context the product was returned for",
-      "type": "string",
-      "maxLength": 256
     },
     "response_type": {
       "type": "string",
