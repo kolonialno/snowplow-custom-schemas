@@ -18,7 +18,7 @@
       "maximum": 100,
       "minimum": 1
     },
-    "response_type": {
+    "request_type": {
       "type": "string",
       "description": "Describes if the products are returned for a WEB or API request",
       "enum": [
