@@ -1,0 +1,45 @@
+{
+  "description": "Describing server-side stored product impressions, i.e. products that were returned from the backend (both api and web)",
+  "self": {
+    "vendor": "com.oda",
+    "name": "product_impression_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "request_url": {
+      "description": "The url of the request asking for products",
+      "type": "string",
+      "maxLength": 256
+    },
+    "pagination_page": {
+      "description": "If pagination, this will describe the page",
+      "maximum": 100,
+      "minimum": 1
+    },
+    "location": {
+      "description": "Describes what kind of page location or context the product was returned for",
+      "type": "string",
+      "maxLength": 256
+    },
+    "response_type": {
+      "type": "string",
+      "description": "Describes if the products are returned for a WEB or API request",
+      "enum": [
+        "API",
+        "WEB"
+      ]
+    },
+    "products": {
+      "description": "The product IDs for the returned products",
+      "type": "array",
+      "items": {
+        "description": "Product id",
+        "type": "integer"
+      }
+    }
+  },
+  "additionalProperties": false
+}
+
