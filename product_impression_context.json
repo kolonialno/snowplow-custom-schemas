@@ -4,11 +4,11 @@
     "vendor": "com.oda",
     "name": "product_impression_context",
     "format": "jsonschema",
-    "version": "1-0-0"
+    "version": "1-0-1"
   },
   "type": "object",
   "properties": {
-    "seen_at": {
+    "impression_context": {
       "description": "Denoting where the customer have seen the products",
       "type": "string",
       "maxLength": 256
@@ -32,8 +32,8 @@
   },
   "additionalProperties": false,
   "required": [
-    "products",
-    "seen_at"
+    "impression_context",
+    "products"
   ]
 }
 
