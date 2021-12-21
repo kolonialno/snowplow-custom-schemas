@@ -1,0 +1,39 @@
+{
+  "description": "Describing server-side stored product impressions, i.e. products that were returned from the backend (both api and web)",
+  "self": {
+    "vendor": "com.oda",
+    "name": "product_impression_context",
+    "format": "jsonschema",
+    "version": "1-0-1"
+  },
+  "type": "object",
+  "properties": {
+    "impression_context": {
+      "description": "Denoting where the customer have seen the products",
+      "type": "string",
+      "maxLength": 256
+    },
+    "products": {
+      "description": "The product IDs in the impression",
+      "type": "array",
+      "items": {
+        "description": "Product id",
+        "type": "integer"
+      }
+    },
+    "campaigns": {
+      "description": "The campaign IDs for the products in the impression",
+      "type": "array",
+      "items": {
+        "description": "Campaign id",
+        "type": "integer"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "impression_context",
+    "products"
+  ]
+}
+
