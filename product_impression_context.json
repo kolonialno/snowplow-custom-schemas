@@ -13,6 +13,11 @@
       "type": "string",
       "maxLength": 256
     },
+    "campaign_type": {
+      "description": "If present, describes the campaign type of the impression",
+      "type": "string",
+      "maxLength": 256
+    },
     "products": {
       "description": "The product IDs in the impression",
       "type": "array",
