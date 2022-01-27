@@ -1,4 +1,8 @@
-# Snowplow custom schemas 
+# Deprecated
+
+This repo is deprecated in favor of [this](https://github.com/kolonialno/iglu-schema-registry/). Don't add anything new to this one, please.
+
+## Snowplow custom schemas 
 
 Public repo for custom Snowplow schemas used by Fivetran.
 
