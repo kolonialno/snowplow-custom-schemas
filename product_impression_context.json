@@ -9,12 +9,12 @@
   "type": "object",
   "properties": {
     "impression_context": {
-      "description": "Denoting where the customer have seen the products",
+      "description": "Denoting where the customer have seen the products (deprecated)",
       "type": "string",
       "maxLength": 256
     },
     "campaign_type": {
-      "description": "If present, describes the campaign type of the impression",
+      "description": "If present, describes the campaign type of the impression (deprecated)",
       "type": "string",
       "maxLength": 256
     },
@@ -27,18 +27,23 @@
       }
     },
     "campaigns": {
-      "description": "The campaign IDs for the products in the impression",
+      "description": "The campaign IDs for the products in the impression (deprecated)",
       "type": "array",
       "items": {
         "description": "Campaign id",
         "type": "integer"
       }
+    },
+    "site_type": {
+      "description": "The site where products are shown (e.g. category page, campaign page)",
+      "type": "string",
+      "maxLength": 256
+    },
+    "site_id": {
+      "description": "The unique id for the site type. If nothing applies, set to -1",
+      "type": "integer"
     }
   },
   "additionalProperties": false,
-  "required": [
-    "impression_context",
-    "products"
-  ]
+  "required": ["site_type", "site_id", "products"]
 }
-
